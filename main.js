@@ -1,9 +1,9 @@
 let tabla = [
-    {Tradicional: "90-100", Range: "12-14", Letter: "A", "SBG Rating": "4"},
-    {Tradicional: "80-89", Range: "9-11", Letter: "B", "SBG Rating": "3"},
-    {Tradicional: "70-79", Range: "6-8", Letter: "C", "SBG Rating": "2"},
-    {Tradicional: "60-69", Range: "3-5", Letter: "D", "SBG Rating": "1"},
-    {Tradicional: "<60", Range: "1-2", Letter: "E", "SBG Rating": "0"},
+    {Tradicional: "90-100", Range: "12-14", Letter: "A", "SBG Rating": "5"},
+    {Tradicional: "80-89", Range: "9-11", Letter: "B", "SBG Rating": "4"},
+    {Tradicional: "70-79", Range: "6-8", Letter: "C", "SBG Rating": "3"},
+    {Tradicional: "60-69", Range: "3-5", Letter: "D", "SBG Rating": "2"},
+    {Tradicional: "<60", Range: "1-2", Letter: "E", "SBG Rating": "1"},
     {Tradicional: "0", Range: "0", Letter: "F", "SBG Rating": "0"}
 ];
 
@@ -68,8 +68,11 @@ function range(){
 }
 
 function sbg (){
-    if (nota === "4"){
+    if (nota === "5"){
     console.log("Tu calificación es: A\ Superas la competencia");
+    }
+    else if (nota === "4"){
+    console.log("Tu calificación es: B\ Demuestras competencia");
     }
     else if (nota === "3"){
     console.log("Tu calificación es: B\ Demuestras competencia");
